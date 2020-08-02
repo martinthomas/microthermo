@@ -8,6 +8,12 @@ function c2f (num: number) {
 }
 basic.forever(function () {
     mytemp = c2f(input.temperature())
-
     basic.showNumber(mytemp)
+    if (mytemp < 70) {
+        mytemp = 70
+    } else if (mytemp > 110) {
+        mytemp = 110
+    }
+    pins.servoWritePin(AnalogPin.P0, Math.map(mytemp, 70, 110, 0, 180))
+    basic.pause(5000)
 })

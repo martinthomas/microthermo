@@ -1,9 +1,10 @@
 {
-    "name": "Untitled",
+    "name": "servothermo",
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "servo": "*"
     },
     "files": [
         "main.blocks",
@@ -16,5 +17,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
